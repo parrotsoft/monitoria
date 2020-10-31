@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+  <!--<img src="..." class="card-img-top" alt="...">-->
+  <div class="card-body">
+    <div *ngIf="show">
+      <h5 class="card-title">{{nombre}}</h5>
+      <p class="card-text">{{apellido}}</p>
+    </div>
+
+    <button class="btn btn-sm btn-primary" (click)="onShowHiden()">
+      {{ show ? 'Ocultar' : 'Ver' }}
+    </button>
+
+  </div>
+</div>

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  data: any = [
+    { nombre: 'Kt', apellido: 'LOPEZ' },
+    { nombre: 'ML', apellido: 'POLO' },
+    { nombre: 'MATIAS', apellido: 'CAMARGO' },
+    { nombre: 'Luis Fran', apellido: 'FT' },
+  ];
+
+
 }
