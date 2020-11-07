@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PersonaComponent } from './persona/persona.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' }
@@ -20,7 +21,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     LoginModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
