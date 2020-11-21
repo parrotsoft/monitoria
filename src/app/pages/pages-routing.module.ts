@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'pages', component: LayoutComponent,
     children: [
       { path: 'home', component: HomeComponent },
-      { path: 'posts', component: PostsComponent }
+      { path: 'posts', component: PostsComponent },
+      { path: 'home/edit/:id', component: PostsComponent }
     ]
   }
 ];

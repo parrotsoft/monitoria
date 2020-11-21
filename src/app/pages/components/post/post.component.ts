@@ -9,6 +9,7 @@ export class PostComponent implements OnInit {
 
   @Input() title: string;
   @Input() body: string;
+  @Input() id: number;
 
   constructor() { }
 

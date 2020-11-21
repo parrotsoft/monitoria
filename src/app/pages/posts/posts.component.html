@@ -12,7 +12,7 @@
         <label>Body</label>
         <textarea rows="4" class="form-control" formControlName="body" ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]='formulario.invalid' (click)="onGuardar()">Save</button>
+      <button type="submit" class="btn btn-primary" [disabled]='formulario.invalid' (click)="onGuardar()"> {{ id_post ? 'Update' : 'Save' }}</button>
     </form>
 
   </div>
